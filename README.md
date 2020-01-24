@@ -4,6 +4,8 @@ This project hold the files needed to create a ceph cluster (**3 mon, 1 mgr, 1 r
 
 Before running `vagrant up`, generate an ed25519 keypair and place it in the [data](./data) directory.
 
+`ssh-keygen -t ed25519 -f data/id_ed25519`
+
 At current, Ceph-Ansible will set up the OSDs, the MONs, and install a MGR on MON1 and an RGW on MON3.
 
 Dashboard needs to be manually instantiated.
